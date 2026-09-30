@@ -1,12 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><title>Bhagyashri Kachare — Portfolio</title>
-<style>body{font-family:Inter,sans-serif;background:#fff;color:#171717;line-height:1.5;max-width:1200px;margin:0 auto;padding:2rem}h1{font-family:Satoshi;font-weight:500;font-size:48px;line-height:1;color:#0a0a0a;margin:0}h2{font-family:Satoshi;font-weight:500;font-size:36px;color:#171717;margin-top:3rem}.subtitle{color:#737373;font-size:18px;margin-top:.5rem}.card{border:1px solid #e5e5e5;border-radius:12px;padding:1rem;margin-top:1rem;background:#fff}.pill{display:inline-flex;background:transparent;border-radius:9999px;padding:.25rem .5rem;font-size:14px;font-weight:500;margin:.15rem;color:#171717}</style></head>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bhagyashri Kachare — Portfolio</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400&display=swap');
+:root{
+  --parchment:#f7f7f4;--bone:#f2f1ed;--linen:#e6e5e0;--stone:#cdcdc9;--mist:#a1a19f;--driftwood:#84847e;--ash:#7a7974;--ink:#26251e;--ember:#f54e00;--amber:#c08532;--forest:#34785c;
+  --font-cursorgothic:'Inter',system-ui,sans-serif;--font-eb-garamond:'"Cormorant Garamond"',Georgia,serif;--font-mono:'JetBrains Mono',monospace;
+  --radius:4px;--shadow-subtle:rgb(235,234,229) 0px 0px 0px 2px;--shadow-xl:rgba(0,0,0,.14) 0px 28px 70px 0px, rgba(0,0,0,.1) 0px 14px 32px 0px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-cursorgothic);background:var(--parchment);color:var(--ink);line-height:1.45;-webkit-font-smoothing:antialiased;max-width:1300px;margin:0 auto;padding:4rem 2rem}
+h1,h2,h3{font-family:var(--font-cursorgothic);font-weight:400;letter-spacing:-.03em;line-height:1.05;color:var(--ink)}
+h1{font-size:3.6rem;letter-spacing:-.03em}
+h2{font-family:var(--font-cursorgothic);font-weight:400;font-size:1.6rem;letter-spacing:-.012em;margin-top:3.5rem;margin-bottom:1rem;border-bottom:1px solid var(--stone);padding-bottom:.6rem}
+.subtitle{font-family:var(--font-cursorgothic);font-size:1.15rem;color:var(--driftwood);line-height:1.5;margin-top:.6rem;max-width:660px}
+.badge{display:inline-flex;align-items:center;gap:.4rem;background:var(--forest);color:#fff;padding:.35rem .9rem;border-radius:9999px;font-size:.75rem;font-weight:500;margin-top:1.2rem;letter-spacing:.01em}
+.cta-row{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:2rem;margin-bottom:3rem}
+.cta{display:inline-flex;align-items:center;gap:.4rem;padding:.7rem 1.3rem;border-radius:var(--radius);font-weight:500;font-size:.85rem;text-decoration:none;transition:transform 120ms ease,box-shadow 120ms ease}
+.cta.dark{background:var(--ink);color:var(--parchment);box-shadow:var(--shadow-subtle)}
+.cta.dark:hover{transform:translateY(-1px);box-shadow:var(--shadow-xl)}
+.cta.ghost{background:transparent;color:var(--ink);border:1px solid var(--stone)}
+.cta.ghost:hover{border-color:var(--ink)}
+.card{background:var(--bone);border:1px solid color-mix(in oklab, var(--ink) 5%, transparent);border-radius:var(--radius);padding:1.5rem;box-shadow:var(--shadow-subtle);margin-top:1rem}
+.card h3{font-family:var(--font-cursorgothic);font-weight:400;font-size:1.05rem;margin-bottom:.25rem;letter-spacing:-.005em}
+.card p,.card li{font-family:var(--font-cursorgothic);font-size:.9rem;color:var(--driftwood);line-height:1.5}
+.pill-row{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.6rem}
+.pill{font-family:var(--font-mono);font-size:11px;color:var(--ash);background:transparent;border:1px solid var(--stone);padding:.25rem .6rem;border-radius:9999px}
+.editorial{font-family:var(--font-eb-garamond);font-size:1.05rem;color:var(--ink);line-height:1.45;margin-top:1rem;font-style:italic}
+nav{display:flex;justify-content:space-between;align-items:center;padding-bottom:1.25rem;border-bottom:1px solid var(--stone);margin-bottom:2.5rem;font-size:.85rem;font-weight:400;color:var(--ink)}
+nav a{text-decoration:none;color:inherit;margin-left:1.2rem;font-family:var(--font-cursorgothic)}
+nav a:hover{text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--ember)}
+nav .btn{font-family:var(--font-cursorgothic);font-weight:500;background:var(--ink);color:var(--parchment);padding:.35rem .9rem;border-radius:var(--radius);font-size:.78rem;text-decoration:none}
+.highlight-link{color:var(--ember);text-decoration:none;font-weight:400;border-bottom:1px solid rgba(245,78,0,.35)}
+.highlight-link:hover{border-bottom:1px solid var(--ember)}
+footer{margin-top:5rem;padding-top:2rem;border-top:1px solid var(--stone);font-family:var(--font-mono);font-size:.7rem;color:var(--mist);display:flex;justify-content:space-between;align-items:center;gap:1rem}
+li{margin-left:1.2rem}
+</style>
+</head>
 <body>
-<header><h1>Bhagyashri Kachare</h1><p class="subtitle">Senior Project Management Professional · AI-Enhanced PMO · GCC Setup & Scaling · Pune</p></header>
-<section><h2>Summary</h2><div class="card"><p>8+ years (Capgemini Lead PMO, Wipro BPO, Sr Analyst PMO). Certified Scrum Master. AI-enhanced delivery: 40% faster reports (ChatGPT), 15% on-time improvement (Asana Intelligence). Bilingual English/Marathi. Open to GCC/PMO roles.</p></div></section>
-<section><h2>Core Skills</h2><div class="card"><span class="pill">Stakeholder Management</span> <span class="pill">PMO Governance</span> <span class="pill">Invoicing & Tracking</span> <span class="pill">Project Control</span> <span class="pill">Staffing & Onboarding</span> <span class="pill">GCC Setup & Scaling</span> <span class="pill">Customer Relationship</span> <span class="pill">Risk & Mitigation</span> <span class="pill">AI PM Tools</span></div></section>
-<section><h2>Experience</h2><div class="card"><h3>Lead PMO — Capgemini (Jul 2022 – Mar 2024)</h3><p>PMO governance, GCC setup playbooks, invoicing automation, 8 PM coaching, AI-enhanced reporting.</p></div><div class="card"><h3>Sr Analyst PMO — Buzzworks / Capgemini (Feb 2022 – Jul 2022)</h3><p>Staffing, vendor management, onboarding, data tracking, AI forecasting.</p></div></section>
-<section><h2>Portfolio & Contact</h2><div class="card"><p>GitHub: <a href="https://github.com/mayur-kachare/ai-pm-portfolio">github.com/mayur-kachare/ai-pm-portfolio</a></p><p>Email: bkachare@gmail.com · LinkedIn: linkedin.com/in/bhagyashri-kachare-joshi-ab091831</p><p>PDF resume available on request.</p></div></section>
-<footer style="margin-top:3rem;font-size:11px;color:#a3a3a3">Profile: wife (Bhagyashri Kachare) · Company: Arka Ethos Exim LLP · Routing: profile-impex / profile-personal · Default channel: Telegram · Timezone: IST</footer>
-</body></html>
+<nav aria-label="Primary">
+<span style="font-family:'Satoshi',system-ui,sans-serif;font-weight:500;font-size:1rem;letter-spacing:-.02em">Bhagyashri Kachare</span>
+<div>
+<a href="#expertise">Expertise</a>
+<a href="#work">Work</a>
+<a href="#education">Education</a>
+<a href="#contact">Contact</a>
+<a href="RESUME.md" class="btn">Download CV</a>
+</div>
+</nav>
+
+<div class="badge">● AVAILABLE FOR GCC / PMO / STRATEGIC-OPERATIONS ROLES IN PUNE</div>
+
+<h1>Project management with an <span style="font-style:italic;font-family:var(--font-eb-garamond)">AI-enhanced PMO edge.</span></h1>
+<p class="subtitle">Senior Project Management Professional — 8+ years across PMO governance, invoicing, project control, staffing, on-boarding, and GCC setup &amp; scaling at Capgemini and Wipro BPO. Certified Scrum Master. Bilingual English / Marathi.</p>
+
+<div class="cta-row">
+<a href="#contact" class="cta dark">↓ Download CV (PDF)</a>
+<a href="#work" class="cta ghost">View experience →</a>
+<a href="https://linkedin.com/in/bhagyashri-kachare-joshi-ab091831" class="cta ghost">LinkedIn ↗</a>
+</div>
+
+<section id="expertise"><h2>Expertise</h2>
+<div class="card"><h3>Stakeholder Management &amp; Communication</h3><p>Bilingual (English / Marathi) cross-functional workshops, executive reporting, requirements facilitation. Customer-facing — translate business needs into PMO action.</p></div>
+<div class="card"><h3>PMO Governance &amp; Process Design</h3><p>Own process lifecycle — architecture, deployment, review, improvement. Playbooks, standardization, methodology adoption. Works with IT / security / operations / vendors.</p></div>
+<div class="card"><h3>Invoicing, Tracking &amp; Project Control</h3><p>Billing automation, vendor reconciliation, forecasting, risk identification, conflict resolution (&lt;48 hrs), 100% on-time delivery.</p></div>
+<div class="card"><h3>GCC Setup &amp; Scaling</h3><p>Design and scale Global Capability Center operations: staffing, onboarding, vendor management, data tracking.</p></div>
+<div class="card"><h3>AI-Enhanced Delivery</h3><p>ChatGPT / Copilot for documentation; Asana Intelligence; Notion AI; Google AI Essentials — faster reports (40%), improved forecasting, reduced manual load.</p></div>
+</section>
+
+<section id="work"><h2>Work</h2>
+<div class="card">
+<h3>Lead PMO — Capgemini (Jul 2022 – Mar 2024)</h3>
+<p>PMO governance for GCC-scale programs; invoicing automation; 8 PM coaching; AI-enhanced reporting; stakeholder management at executive level.</p>
+<div class="pill-row"><span class="pill">GCC Setup</span><span class="pill">PMO</span><span class="pill">Invoicing</span><span class="pill">AI Tools</span></div>
+</div>
+<div class="card">
+<h3>Sr Analyst PMO — Buzzworks / Capgemini (Feb 2022 – Jul 2022)</h3>
+<p>Staffing, vendor management, onboarding frameworks, data tracking, forecasting — foundational layer for GCC operations.</p>
+<div class="pill-row"><span class="pill">Staffing</span><span class="pill">Vendor Mgmt</span><span class="pill">Data Tracking</span></div>
+</div>
+</section>
+
+<section id="education"><h2>Education &amp; Certification</h2>
+<div class="card"><h3>Certified Scrum Master (CSM)</h3><p>Agile delivery, sprint planning, backlog grooming, retrospective facilitation.</p></div>
+<div class="card"><h3>AI for Project Managers — Applied</h3><p>ChatGPT / Copilot / Asana Intelligence / Notion AI / Google AI Essentials — embedded into PMO workflows (reports, forecasting, documentation).</p></div>
+</section>
+
+<section id="contact"><h2>Contact</h2>
+<div class="card">
+<p><strong>Email:</strong> <a href="mailto:bkachare@gmail.com" class="highlight-link">bkachare@gmail.com</a> &nbsp;·&nbsp; <strong>Phone:</strong> +91 9850899140</p>
+<p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/bhagyashri-kachare-joshi-ab091831" class="highlight-link">linkedin.com/in/bhagyashri-kachare-joshi-ab091831</a></p>
+<p><strong>Portfolio / Repo:</strong> <a href="https://github.com/Bhagyashri-Kachare/Bhagyashri-Kachare-Joshi" class="highlight-link">github.com/Bhagyashri-Kachare/Bhagyashri-Kachare-Joshi</a></p>
+<p style="font-family:var(--font-eb-garamond);font-style:italic;color:var(--driftwood);margin-top:.75rem">PDF resume available — request via email or LinkedIn.</p>
+</div>
+</section>
+
+<footer>
+<span>Profile: wife (Bhagyashri Kachare) · Routing: profile-impex (Arka Ethos Exim LLP) / profile-personal · Telegram default · IST</span>
+<span>Design reference: Cursor — Parchment / Ink / Ember · 4px radius · CursorGothic / EB Garamond · Flat editorial surfaces</span>
+</footer>
+</body>
+</html>
