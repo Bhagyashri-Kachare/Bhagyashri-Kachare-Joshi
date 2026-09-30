@@ -11,7 +11,7 @@ Three qualities I bring that are hard to train: ownership of the project-to-oper
 I would welcome the chance to discuss how my production-support-to-governance arc can accelerate your AMS transition and operational readiness work.
 
 Best regards,
-**Bhagyashri Kachare**
+**Bhagyashri Kachare (Joshi)**
 Pune, Maharashtra, India · bkachare@gmail.com · +91 98508 99140 · linkedin.com/in/bhagyashri-kachare-joshi-ab091831
 
 ---
