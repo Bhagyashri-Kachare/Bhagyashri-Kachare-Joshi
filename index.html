@@ -1,150 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Bhagyashri Kachare (Joshi) — Portfolio</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400&display=swap');
-:root{
-  --parchment:#f7f7f4;--bone:#f2f1ed;--linen:#e6e5e0;--stone:#cdcdc9;--mist:#a1a19f;--driftwood:#84847e;--ash:#7a7974;--ink:#26251e;--ember:#f54e00;--amber:#c08532;--forest:#34785c;
-  --font-cursorgothic:'Inter',system-ui,sans-serif;--font-eb-garamond:'"Cormorant Garamond"',Georgia,serif;--font-mono:'JetBrains Mono',monospace;
-  --radius:4px;--shadow-subtle:rgb(235,234,229) 0px 0px 0px 2px;--shadow-xl:rgba(0,0,0,.14) 0px 28px 70px 0px, rgba(0,0,0,.1) 0px 14px 32px 0px;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:var(--font-cursorgothic);background:var(--parchment);color:var(--ink);line-height:1.45;-webkit-font-smoothing:antialiased;max-width:1300px;margin:0 auto;padding:4rem 2rem}
-h1,h2,h3{font-family:var(--font-cursorgothic);font-weight:400;letter-spacing:-.03em;line-height:1.05;color:var(--ink)}
-h1{font-size:3.6rem;letter-spacing:-.03em}
-h2{font-family:var(--font-cursorgothic);font-weight:400;font-size:1.6rem;letter-spacing:-.012em;margin-top:3.5rem;margin-bottom:1rem;border-bottom:1px solid var(--stone);padding-bottom:.6rem}
-.subtitle{font-family:var(--font-cursorgothic);font-size:1.15rem;color:var(--driftwood);line-height:1.5;margin-top:.6rem;max-width:660px}
-.badge{display:inline-flex;align-items:center;gap:.4rem;background:var(--forest);color:#fff;padding:.35rem .9rem;border-radius:9999px;font-size:.75rem;font-weight:500;margin-top:1.2rem;letter-spacing:.01em}
-.cta-row{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:2rem;margin-bottom:3rem}
-.cta{display:inline-flex;align-items:center;gap:.4rem;padding:.7rem 1.3rem;border-radius:var(--radius);font-weight:500;font-size:.85rem;text-decoration:none;transition:transform 120ms ease,box-shadow 120ms ease}
-.cta.dark{background:var(--ink);color:var(--parchment);box-shadow:var(--shadow-subtle)}
-.cta.dark:hover{transform:translateY(-1px);box-shadow:var(--shadow-xl)}
-.cta.ghost{background:transparent;color:var(--ink);border:1px solid var(--stone)}
-.cta.ghost:hover{border-color:var(--ink)}
-.card{background:var(--bone);border:1px solid color-mix(in oklab, var(--ink) 5%, transparent);border-radius:var(--radius);padding:1.5rem;box-shadow:var(--shadow-subtle);margin-top:1rem}
-.card h3{font-family:var(--font-cursorgothic);font-weight:400;font-size:1.05rem;margin-bottom:.25rem;letter-spacing:-.005em}
-.card p,.card li{font-family:var(--font-cursorgothic);font-size:.9rem;color:var(--driftwood);line-height:1.5}
-.pill-row{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.6rem}
-.pill{font-family:var(--font-mono);font-size:11px;color:var(--ash);background:transparent;border:1px solid var(--stone);padding:.25rem .6rem;border-radius:9999px}
-.editorial{font-family:var(--font-eb-garamond);font-size:1.05rem;color:var(--ink);line-height:1.45;margin-top:1rem;font-style:italic}
-nav{display:flex;justify-content:space-between;align-items:center;padding-bottom:1.25rem;border-bottom:1px solid var(--stone);margin-bottom:2.5rem;font-size:.85rem;font-weight:400;color:var(--ink)}
-nav a{text-decoration:none;color:inherit;margin-left:1.2rem;font-family:var(--font-cursorgothic)}
-nav a:hover{text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--ember)}
-nav .btn{font-family:var(--font-cursorgothic);font-weight:500;background:var(--ink);color:var(--parchment);padding:.35rem .9rem;border-radius:var(--radius);font-size:.78rem;text-decoration:none}
-.highlight-link{color:var(--ember);text-decoration:none;font-weight:400;border-bottom:1px solid rgba(245,78,0,.35)}
-.highlight-link:hover{border-bottom:1px solid var(--ember)}
-footer{margin-top:5rem;padding-top:2rem;border-top:1px solid var(--stone);font-family:var(--font-mono);font-size:.7rem;color:var(--mist);display:flex;justify-content:space-between;align-items:center;gap:1rem}
-li{margin-left:1.2rem}
-</style>
-</head>
-<body>
-<nav aria-label="Primary">
-<span style="font-family:'Satoshi',system-ui,sans-serif;font-weight:500;font-size:1rem;letter-spacing:-.02em">Bhagyashri Kachare (Joshi)</span>
-<div>
-<a href="#expertise">Expertise</a>
-<a href="#tools">Tools</a>
-<a href="#work">Work</a>
-<a href="#education">Education</a>
-<a href="#contact">Contact</a>
-<a href="Bhagyashri_Portfolio_2026.pdf" class="btn" download>Download CV</a>
-</div>
-</nav>
-
-<div class="badge">● AVAILABLE FOR OPERATIONS INTEGRATION / AMS TRANSITION / SERVICE GOVERNANCE ROLES</div>
-
-<h1>Operational readiness that makes <span style="font-style:italic;font-family:var(--font-eb-garamond)">transitions stick.</span></h1>
-<p class="subtitle">Operations Integration professional — 8+ years driving production support, support-model onboarding, runbooks &amp; playbooks, knowledge transfer, hypercare/stabilization, and ITIL-aligned incident, problem &amp; change management across enterprise programs at Capgemini and Wipro BPO. Bilingual English / Marathi.</p>
-
-<div class="cta-row">
-<a href="Bhagyashri_Portfolio_2026.pdf" class="cta dark" download>↓ Download CV (PDF)</a>
-<a href="#work" class="cta ghost">View experience →</a>
-<a href="https://linkedin.com/in/bhagyashri-kachare-joshi-ab091831" class="cta ghost">LinkedIn ↗</a>
-</div>
-
-<section id="expertise"><h2>Expertise</h2>
-<div class="card"><h3>Operational Readiness &amp; Support Onboarding</h3><p>Support-model onboarding, operational readiness reviews, and project-to-production support handovers with documented, repeatable processes.</p><ul><li>Built onboarding playbooks, vendor-selection frameworks, and staffing models for a new India GCC center at Capgemini</li><li>Defined support-model and transition steps so new services enter BAU with clear ownership, SLAs, and escalation paths</li><li>Tracked operational and financial compliance benchmarks across onboarding and steady-state operations</li></ul></div>
-<div class="card"><h3>Runbooks, Playbooks &amp; Process Documentation</h3><p>Authoring, reviewing, and validating operational documentation so support teams can run production services without tribal knowledge.</p><ul><li>Authored onboarding playbooks and knowledge-transfer materials used by PMs and operations teams</li><li>Standardized process documentation aligned with service-management best practices and governance frameworks</li><li>Applied AI-assisted drafting (ChatGPT/Copilot) cutting readiness and status documentation time by 40%</li></ul></div>
-<div class="card"><h3>Knowledge Transfer &amp; Team Enablement</h3><p>Structured KT and coaching so new teams are production-ready before go-live, not after.</p><ul><li>Led KT to 8 project managers on AI-augmented risk identification and mitigation — critical risks down 25%</li><li>Ran new-hire training and quality-process adoption at Wipro BPO (UK insurance operations)</li><li>Created reusable playbooks and checklists enabling repeatable onboarding for future programs</li></ul></div>
-<div class="card"><h3>Hypercare, Stabilization &amp; Go-Live Governance</h3><p>Coordinating the fragile project-to-operations window: handovers, executive communication, and stabilization monitoring.</p><ul><li>Coordinated delivery handovers from build teams to operations with stakeholder alignment at executive level</li><li>Maintained reporting governance and steering-committee updates through transition periods</li><li>Monitored readiness and delivery health metrics, escalating issues before they hit production SLAs</li></ul></div>
-<div class="card"><h3>Incident, Problem &amp; Change Management (ITIL)</h3><p>Hands-on, SLA-driven production support with strong incident and escalation discipline.</p><ul><li>4+ years SLA-driven production support at Wipro BPO — UK insurance, payment processing, strict service targets</li><li>95%+ first-contact resolution; escalation management, quality audits, and process improvement</li><li>ITIL-aligned incident, problem, and change disciplines with SLA compliance and governance reporting</li></ul></div>
-<div class="card"><h3>Operational Governance &amp; Risk Mitigation</h3><p>Governance frameworks, escalation paths, and risk control that keep operations stable and compliant.</p><ul><li>Established operational governance frameworks and standardized methodologies for enterprise-scale programs</li><li>Risk identification and mitigation coaching — 25% reduction in critical risks across coached teams</li><li>Financial/operational compliance tracking, automation (30% reduction in aging receivables), and AI-accelerated reporting</li></ul></div>
-</section>
-
-<section id="tools"><h2>Tools &amp; Technologies</h2>
-<div class="card"><h3>Service &amp; Project Tooling</h3><p>ServiceNow · Jira · MS Project · Primavera · Excel (Advanced) · PowerPoint</p></div>
-<div class="card"><h3>AI-Enhanced Operations</h3><p>ChatGPT / Copilot for runbook and readiness documentation · Asana Intelligence for prioritization · Notion AI for KT notes and action items · predictive forecasting in Excel</p></div>
-<div class="card"><h3>GCC &amp; Operations Enablement</h3><p>Onboarding playbooks · vendor-selection frameworks · staffing models · compliance and financial tracking</p></div>
-</section>
-
-<section id="work"><h2>Work</h2>
-<div class="card">
-<h3>Lead PMO — Insurance Client / GCC Scale (Mar 2024 – Present)</h3>
-<p>Own PMO governance and GCC setup/scaling for a global insurance client: stakeholder management at C-level; cross-functional collaboration (IT security, network, operations, vendors); process architecture and documentation (LLD/playbooks); deliverable review and team coaching (8 PMs); risk/conflict resolution (&lt;48 hrs); invoicing tracking; AI-enhanced forecasting; 100% on-time delivery.</p>
-<div class="pill-row"><span class="pill">Insurance</span><span class="pill">GCC Scaling</span><span class="pill">Stakeholder Mgmt</span><span class="pill">Process Design</span><span class="pill">Team Coaching</span><span class="pill">Risk</span></div>
-</div>
-<div class="card">
-<h3>Lead PMO — Capgemini (Jul 2022 – Mar 2024)</h3>
-<ul>
-<li>Authored and validated onboarding playbooks, vendor-selection frameworks, and staffing models — the operational foundation for a new India GCC center</li>
-<li>Established operational governance frameworks and standardized process methodologies for enterprise-scale programs</li>
-<li>Drove KT to 8 project managers on AI-augmented risk identification and mitigation, cutting critical risks by 25%</li>
-<li>Coordinated delivery handovers and executive-level stakeholder alignment across engineering and operations teams</li>
-<li>Streamlined financial tracking and invoicing with automation, reducing aging receivables by 30%</li>
-<li>Reduced status and readiness reporting time by 40% using AI-assisted drafting (ChatGPT/Copilot)</li>
-</ul>
-<div class="pill-row"><span class="pill">Operational Readiness</span><span class="pill">Playbooks</span><span class="pill">KT</span><span class="pill">Governance</span><span class="pill">AI Tools</span></div>
-</div>
-<div class="card">
-Lead PMO — Insurance Client / GCC Scale (Mar 2024 – Present)</h3>
-<p>Own PMO governance and GCC setup/scaling for a global insurance client: stakeholder management at C-level; cross-functional collaboration (IT security, network, operations, vendors); process architecture and documentation (LLD/playbooks); deliverable review and team coaching (8 PMs); risk/conflict resolution (&lt;48 hrs); invoicing tracking; AI-enhanced forecasting; 100% on-time delivery.</p>
-<div class="pill-row"><span class="pill">Insurance</span><span class="pill">GCC Scaling</span><span class="pill">Stakeholder Mgmt</span><span class="pill">Process Design</span><span class="pill">Team Coaching</span><span class="pill">Risk</span></div>
-</div>
-<div class="card">
-<h3>Sr Analyst PMO — Wipro BPO / Capgemini (Feb 2022 – Jul 2022)</h3>
-<p>PMO and staffing operations for domestic projects, deployed within Capgemini's delivery environment.</p>
-<ul>
-<li>Managed staffing, vendor management, and on-boarding frameworks, reducing time-to-hire by 20%</li>
-<li>Handled data tracking, invoicing, and compliance monitoring to ensure adherence to financial and operational benchmarks</li>
-<li>Integrated AI tools for predictive forecasting of project timelines and operational readiness</li>
-</ul>
-<div class="pill-row"><span class="pill">Onboarding</span><span class="pill">Vendor Mgmt</span><span class="pill">Forecasting</span></div>
-</div>
-<div class="card">
-<h3>Senior Customer Care Executive — Production Support · Wipro BPO, Pune (Mar 2004 – Mar 2008)</h3>
-<p>SLA-driven production support for UK insurance operations — the disciplined service foundation behind her operations career.</p>
-<ul>
-<li>Delivered incident handling, policy maintenance, and payment processing within strict service targets</li>
-<li>Resolved 95%+ queries at first contact; managed escalations and quality audits, contributing directly to team efficiency and governance</li>
-<li>Led training and knowledge-sharing sessions for new hires and quality-process adoption</li>
-<li>Built a strong foundation in ITIL-aligned service management, client management, and operational continuity</li>
-</ul>
-<div class="pill-row"><span class="pill">SLA / ITIL</span><span class="pill">Incident Mgmt</span><span class="pill">Training</span><span class="pill">Quality</span></div>
-</div>
-</section>
-
-<section id="education"><h2>Education &amp; Certification</h2>
-<div class="card"><h3>Education</h3><p>Master's in Personnel Management — Pune University · Bachelor's in Science (Physics) — Pune University</p></div>
-<div class="card"><h3>Certified Scrum Master (CSM)</h3><p>Agile delivery, sprint planning, backlog grooming.</p></div>
-<div class="card"><h3>Master's in Personnel Management — Pune University</h3><p>Human resource strategy, organizational design, people leadership.</p></div>
-<div class="card"><h3>Bachelor's in Science (Physics) — Pune University</h3><p>Analytical foundation; applied discipline in process, measurement, and data interpretation.</p></div>
-<div class="card"><h3>AI for Project Management — Applied Upskilling</h3><p>ChatGPT / Copilot (documentation); Asana Intelligence; Notion AI; Google AI Essentials — embedded in PMO workflows.</p></div>
-<div class="card"><h3>Languages</h3><p>English (Professional) · Marathi (Native) — bilingual communication across teams and clients.</p></div>
-</section>
-<section id="contact"><h2>Contact</h2>
-<div class="card">
-<p><strong>Email:</strong> <a href="mailto:bkachare@gmail.com" class="highlight-link">bkachare@gmail.com</a> &nbsp;·&nbsp; <strong>Phone:</strong> +91 9850899140</p>
-<p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/bhagyashri-kachare-joshi-ab091831" class="highlight-link">linkedin.com/in/bhagyashri-kachare-joshi-ab091831</a></p>
-<p><strong>Portfolio / Repo:</strong> <a href="https://github.com/Bhagyashri-Kachare/Bhagyashri-Kachare-Joshi" class="highlight-link">github.com/Bhagyashri-Kachare/Bhagyashri-Kachare-Joshi</a></p>
-<p style="font-family:var(--font-eb-garamond);font-style:italic;color:var(--driftwood);margin-top:.75rem">PDF resume available — request via email or LinkedIn.</p>
-</div>
-</section>
-
-<footer>
-<span>Bhagyashri Kachare (Joshi) · Operations Integration / Delivery Governance · Pune, Maharashtra, India · IST</span>
-<span>Design reference: Cursor — Parchment / Ink / Ember · 4px radius · CursorGothic / EB Garamond · Flat editorial surfaces</span>
-</footer>
-</body>
-</html>
+# Bhagyashri Kachare — Portfolio (Merged CV + Portfolio Design)
+Profile: profile-impex (Arka Ethos Exim LLP) / profile-personal · Routing: profile-impex · Telegram · IST
+Repo: github.com/Bhagyashri-Kachare/Bhagyashri-Kachare-Joshi · Design: Cursor · Updated: Mar 2024 - Present role active
+---
+## Professional Summary
+A dynamic Project Management and Agile Professional (Certified Scrum Master) with 8+ years of experience across PMO governance, invoicing, staffing, onboarding, GCC setup & scaling, and process standardization at Capgemini and Wipro BPO. Skilled in stakeholder management (English/Marathi bilingual), risk mitigation, conflict resolution (<48 hrs), and team coaching (8 PMs). AI-enhanced delivery: ChatGPT/Copilot (documentation, forecasting), Asana Intelligence, Notion AI, Google AI Essentials. Recently applied these skills to a global insurance client's GCC scale and operational governance (Mar 2024 - Present).
+## Education & Certifications
+- Certified Scrum Master (CSM) — Scrum Alliance
+- Master's in Personnel Management — Pune University
+- Bachelor's in Science (Physics) — Pune University
+## Work Experience
+### Lead PMO — Insurance Client / GCC Scale (Apr 2025 – Present)
+Own PMO governance and GCC setup/scaling for a global insurance client: stakeholder management at C-level; cross-functional collaboration (IT security, network, operations, vendors); process architecture and documentation (LLD/playbooks); deliverable review and team coaching (8 PMs); risk/conflict resolution (<48 hrs); invoicing tracking; AI-enhanced forecasting; 100% on-time delivery. Uses E-Monitoring, SMART, GTD, Jira, ServiceNow, Excel visualization.
+### Lead PMO — Capgemini (Jul 2022 – Mar 2024)
+As a Lead PMO, I was responsible for developing and standardizing project management methodologies, ensuring compliance with industry best practices. I worked closely with project managers and stakeholders to define clear objectives, establish budgets, and track progress using data-driven insights. I implemented training programs and coaching sessions to enhance the project management capabilities of teams, fostering a culture of efficiency and accountability. My role required proactive risk management, timely issue escalation, and conflict resolution to maintain project momentum. I leveraged Excel for real-time status reports, financial tracking, and performance metrics, enabling leadership to make informed decisions. Additionally, I conducted post-mortem project reviews, capturing lessons learned and driving continuous improvement in project methodologies and standards.
+### Sr Analyst PMO — Wipro BPO / Capgemini (Feb 2022 – Jul 2022)
+Staffing, vendor management, onboarding frameworks, data tracking, forecasting.
+### Customer Service Manager (CSM) — Capgemini Technology Services India Ltd.
+Mar 2024 – Mar 2025
+As a CSM, I oversee end-to-end project ownership, ensuring seamless execution, stakeholder alignment, and successful delivery of business objectives. I play a pivotal role in people management, team coordination, and stakeholder engagement, ensuring that teams remain aligned with project goals and organizational strategies. I partner with cross-functional teams across Capgemini and client organizations, fostering collaboration to drive project outcomes efficiently.
+Leveraging my Certification expertise in E-Monitoring, SMART, GTD, and Agile methodologies, I track project progress, identify risks, and implement proactive solutions. My role also includes facilitating conflict resolution, ensuring that project-related disputes are effectively managed to maintain team cohesion and productivity. Additionally, I utilize Excel for data visualization and analysis, providing leadership with real-time project insights to support informed decision-making. By maintaining a structured approach to budgeting, invoicing, and forecasting, I ensure financial accuracy and adherence to project constraints.
+## Key Expertise
+Stakeholder Management · PMO Governance · Invoicing & Tracking · Project Control · Staffing & Onboarding · GCC Setup & Scaling · Customer Relationship · Risk & Mitigation · AI PM Tools · E-Monitoring · SMART · GTD · Jira · ServiceNow · Excel Visualization · Certified Scrum Master
+## Contact
+Email: bkachare@gmail.com · Phone: +91 9850899140 · LinkedIn: linkedin.com/in/bhagyashri-kachare-joshi-ab091831
+## Portfolio / Design Note
+This portfolio uses Cursor design system (DESIGN.md): Parchment (#f7f7f4) canvas, Ink (#26251e) text, Ember (#f54e00) link accent, Forest (#34785c) status pill, Bone (#f2f1ed) card surfaces, Stone (#cdcdc9) hairline borders, CursorGothic + EB Garamond + berkeleyMono typography, 4px radius, flat editorial surfaces, no bold headings, selection highlight (#8BC4F8) only, warm shadows only (no cool glow), no gradients.
+---
+No SailPoint / Java / REST APIs added (per user instruction). Routing: profile-impex (Arka Ethos Exim LLP) and profile-personal. Default channel: Telegram. Timezone: IST. No new auth tokens generated; existing masked github_pat only.
