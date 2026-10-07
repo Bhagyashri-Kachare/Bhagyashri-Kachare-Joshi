@@ -5,49 +5,43 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bhagyashri Kachare (Joshi) — Portfolio</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400&display=swap');
 :root {
-  --color-parchment: #f7f7f4; --color-bone: #f2f1ed; --color-linen: #e6e5e0;
-  --color-stone: #cdcdc9; --color-mist: #a1a19f; --color-driftwood: #84847e;
-  --color-ash: #7a7974; --color-ink: #26251e; --color-ember: #f54e00;
-  --font-cursorgothic: 'Inter', ui-sans-serif, system-ui, sans-serif;
-  --font-eb-garamond: 'EB Garamond', 'Cormorant Garamond', Georgia, serif;
-  --font-berkeleymono: 'JetBrains Mono', ui-monospace, monospace;
+  --obsidian: #09090b; --graphite: #18181b; --slate: #27272a; --iron: #3f3f46;
+  --steel: #52525b; --fog: #71717a; --ash: #a1a1aa; --mist: #d4d4d8;
+  --cloud: #ececee; --paper: #f4f4f5; --snow: #ffffff; --ember: #ff5a00;
+  --font-cosmica: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: var(--font-cursorgothic); background: var(--color-parchment); color: var(--color-ink); line-height: 1.45; max-width: 980px; margin: 0 auto; padding: 4rem 2.5rem; -webkit-font-smoothing: antialiased; }
-h1 { font-family: var(--font-cursorgothic); font-weight: 400; letter-spacing: -0.03em; line-height: 1.05; font-size: 2.6rem; color: var(--color-ink); margin-bottom: 0.1rem; }
-.subtitle { font-family: var(--font-eb-garamond); font-size: 1.15rem; color: var(--color-driftwood); line-height: 1.55; max-width: 640px; margin-bottom: 1.5rem; }
-nav { display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; margin-bottom: 1rem; font-family: var(--font-cursorgothic); }
-av a { color: var(--color-ink); text-decoration: none; border-bottom: 1px solid rgba(38,37,30,0.15); padding-bottom: 1px; transition: border-color 150ms ease, color 150ms ease; }
-av a:hover { border-bottom-color: var(--color-ember); color: var(--color-ember); }
-.badge { display: inline-flex; align-items: center; gap: .35rem; background: var(--color-forest); color: #fff; padding: .35rem .85rem; border-radius: 4px; font-size: .75rem; font-weight: 500; margin-top: 1rem; letter-spacing: .02em; font-family: var(--font-cursorgothic); }
-.card { background: var(--color-bone); border: 1px solid color-mix(in oklab, var(--color-ink) 5%, transparent); border-radius: 4px; padding: 1.5rem; margin-top: 1rem; }
-.card h3 { font-family: var(--font-cursorgothic); font-weight: 500; font-size: 1.05rem; letter-spacing: -0.01em; color: var(--color-ink); margin-bottom: .35rem; }
-.card p, .card ul { font-family: var(--font-cursorgothic); font-size: 0.95rem; line-height: 1.45; color: var(--color-ink); }
-.card ul { list-style: none; padding-left: 0; margin-top: .25rem; }
+body { font-family: var(--font-cosmica); background: var(--paper); color: var(--graphite); line-height: 1.45; max-width: 1200px; margin: 0 auto; padding: 4rem 2.5rem; -webkit-font-smoothing: antialiased; }
+nav { display: flex; justify-content: space-between; align-items: center; font-size: 13px; margin-bottom: 1.5rem; font-weight: 500; letter-spacing: 0.01em; }
+av a { color: var(--obsidian); text-decoration: none; border-bottom: 1px solid var(--cloud); padding-bottom: 1px; transition: border-color 150ms ease; }
+nav a:hover { border-bottom-color: var(--ember); color: var(--ember); }
+.badge { display: inline-block; background: var(--obsidian); color: #fff; font-size: 11px; font-weight: 600; padding: 6px 12px; border-radius: 12px; letter-spacing: 0.02em; margin: 8px 0 24px 0; font-family: var(--font-cosmica); }
+h1 { font-family: var(--font-cosmica); font-weight: 600; font-size: 56px; line-height: 1.12; letter-spacing: -0.03em; color: var(--obsidian); margin: 0 0 12px 0; }
+h2 { font-family: var(--font-cosmica); font-weight: 600; font-size: 32px; line-height: 1.28; letter-spacing: -0.01em; color: var(--obsidian); margin: 48px 0 20px 0; border-bottom: 1px solid var(--cloud); padding-bottom: 8px; }
+.subtitle { font-size: 15px; color: var(--steel); line-height: 1.5; max-width: 640px; margin-bottom: 24px; }
+.card { background: #ffffff; border: 1px solid var(--cloud); border-radius: 36px; padding: 28px; margin-top: 16px; }
+.card h3 { font-size: 20px; font-weight: 600; color: var(--obsidian); margin: 0 0 8px 0; line-height: 1.3; letter-spacing: -0.01em; }
+.card p, .card ul { font-size: 14px; line-height: 1.45; color: var(--graphite); margin: 0 0 6px 0; }
+.card ul { list-style: none; padding-left: 0; }
 .card li { position: relative; padding-left: 14pt; margin: 3pt 0; }
-.card li::before { content: "•"; position: absolute; left: 0; top: 0; font-weight: 700; color: var(--color-ink); }
-h2 { font-family: var(--font-cursorgothic); font-weight: 400; font-size: 1.6rem; letter-spacing: -0.012em; color: var(--color-ink); border-bottom: 1px solid var(--color-stone); padding-bottom: .6rem; margin-top: 3rem; margin-bottom: 1rem; }
-a[href="Bhagyashri_Portfolio_2026.pdf"] { color: var(--color-ember); text-decoration: none; border-bottom: 1px solid rgba(245,78,0,.35); padding-bottom: 1px; font-weight: 500; }
-.header-row { display: flex; justify-content: space-between; align-items: flex-start; gap: 2rem; flex-wrap: wrap; }
-.header-col { flex: 1 1 320px; min-width: 0; }
-.header-photo { flex: 0 0 auto; }
-.header-photo img { width: 88px; height: 108px; object-fit: cover; border-radius: 4px; border: 1px solid var(--color-stone); box-shadow: 0 2px 8px rgba(38,37,30,.06); }
+.card li::before { content: "→"; position: absolute; left: 0; top: 0; font-weight: 600; color: var(--ember); font-size: 13px; }
+.tag { display: inline-block; background: transparent; border: 1px solid var(--cloud); color: var(--graphite); font-size: 12px; padding: 3px 8px; border-radius: 12px; margin: 2px 4px 0 0; font-family: var(--font-cosmica); font-weight: 400; }
+.tag.fill { background: var(--slate); color: #fff; border-color: var(--slate); }
+.tag.ember { background: var(--ember); color: #fff; border-color: var(--ember); font-weight: 600; }
+.contact { font-size: 13px; color: var(--fog); margin-top: 8px; }
+.contact a { color: var(--obsidian); text-decoration: underline; text-decoration-color: var(--mist); }
 </style>
 </head>
 <body>
 
-<header>
-  <nav><b>Bhagyashri Kachare (Joshi)</b> <span><a href="#expertise">Expertise</a> · <a href="#work">Work</a> · <a href="#contact">Contact</a> · <a href="Bhagyashri_Portfolio_2026.pdf">Download CV</a></span></nav>
-  <div class="badge">● AVAILABLE FOR GCC / PMO / SERVICE GOVERNANCE — PUNE</div>
-  <div class="header-row">
-    <div class="header-col">
-      <h1>Operations &amp; Delivery Governance · Service-Transition / AMS / ITIL · Stakeholder Mgmt · AI Tools</h1>
-      <p class="subtitle">Operations and delivery with an AI-enhanced PMO edge (8+ years). 8+ years at Capgemini / Wipro BPO — PMO governance, invoicing, staffing, onboarding, GCC setup, process design. Certified Scrum Master. Bilingual English / Marathi.</p>
-    </div>
-  </div>
-</header>
+<nav><b>Bhagyashri Kachare (Joshi)</b> <span><a href="#expertise">Expertise</a> · <a href="#work">Work</a> · <a href="#contact">Contact</a> · <a href="Bhagyashri_Portfolio_2026.pdf">Download CV</a></span></nav>
+<div class="badge">● AVAILABLE FOR GCC / PMO / SERVICE GOVERNANCE — PUNE</div>
+
+<h1 style="font-size:64px;line-height:1.12;letter-spacing:-0.03em;">Operations &amp; Delivery Governance · Service-Transition / AMS / ITIL · Stakeholder Mgmt · AI Tools</h1>
+<p class="subtitle">Operations and delivery with an AI-enhanced PMO edge (8+ years). 8+ years at Capgemini / Wipro BPO — PMO governance, invoicing, staffing, onboarding, GCC setup, process design. Certified Scrum Master. Bilingual English / Marathi.</p>
 
 <section id="expertise"><h2>Core Expertise</h2>
 <div class="card"><h3>Stakeholder Management &amp; Communication</h3><p>Bilingual (English/Marathi); C-level workshops; cross-functional collaboration (engineering, operations, vendors, security).</p></div>
@@ -59,17 +53,20 @@ a[href="Bhagyashri_Portfolio_2026.pdf"] { color: var(--color-ember); text-decora
 </section>
 
 <section id="work"><h2>Work Experience</h2>
-<div class="card"><h3>Lead PMO — Insurance Client / GCC Scale <span style="color:#84847e;font-weight:400;font-size:.9em;">(Apr 2025 – Present)</span></h3>
+<div class="card"><h3>Lead PMO — Insurance Client / GCC Scale <span style="color:#52525b;font-weight:400;font-size:.85em;">(Apr 2025 – Present)</span></h3>
 <p>Own PMO governance and GCC setup/scaling for a global insurance client: stakeholder management at C-level; cross-functional collaboration (IT security, network, operations, vendors); process architecture and documentation (LLD/playbooks); deliverable review and team coaching (8 PMs); risk/conflict resolution (&lt;48 hrs); invoicing tracking; AI-enhanced forecasting; 100% on-time delivery.</p>
+<span class="tag">Insurance</span><span class="tag">GCC Scaling</span><span class="tag">Stakeholder Mgmt</span><span class="tag">Process Design</span><span class="tag">Team Coaching</span><span class="tag">Risk</span>
 </div>
-<div class="card"><h3>Customer Service Manager (CSM) — Capgemini <span style="color:#84847e;font-weight:400;font-size:.9em;">(Mar 2024 – Mar 2025)</span></h3>
+<div class="card"><h3>Customer Service Manager (CSM) — Capgemini <span style="color:#52525b;font-weight:400;font-size:.85em;">(Mar 2024 – Mar 2025)</span></h3>
 <p>As a CSM, I oversee end-to-end project ownership, ensuring seamless execution, stakeholder alignment, and successful delivery. Leveraging Certification expertise in E-Monitoring, SMART, GTD, and Agile methodologies, I track progress, identify risks, implement proactive solutions. I facilitate conflict resolution to maintain cohesion and use Excel for real-time project insights.</p>
+<span class="tag">CSM</span><span class="tag">People Mgmt</span><span class="tag">Stakeholder</span><span class="tag">E-Monitoring</span><span class="tag">Agile</span>
 </div>
-<div class="card"><h3>Lead PMO — Capgemini <span style="color:#84847e;font-weight:400;font-size:.9em;">(Jul 2022 – Mar 2024)</span></h3>
+<div class="card"><h3>Lead PMO — Capgemini <span style="color:#52525b;font-weight:400;font-size:.85em;">(Jul 2022 – Mar 2024)</span></h3>
 <p>As a Lead PMO, I was responsible for developing and standardizing project management methodologies, ensuring compliance with industry best practices. I worked closely with project managers and stakeholders to define clear objectives, establish budgets, and track progress using data-driven insights. I implemented training programs and coaching sessions to enhance the project management capabilities of teams, fostering a culture of efficiency and accountability. My role required proactive risk management, timely issue escalation, and conflict resolution to maintain project momentum. I leveraged Excel for real-time status reports, financial tracking, and performance metrics, enabling leadership to make informed decisions. Additionally, I conducted post-mortem project reviews, capturing lessons learned, and driving continuous improvement in project methodologies and standards.</p>
+<span class="tag fill">GCC Setup</span><span class="tag fill">PMO Governance</span><span class="tag fill">Stakeholder Mgmt</span><span class="tag fill">Process Design</span><span class="tag">Team Coaching</span><span class="tag">Risk &amp; Mitigation</span><span class="tag">Financial Tracking</span><span class="tag">AI Tools</span>
 </div>
-<div class="card"><h3>Sr Analyst (PMO) — Buzzworks Business Services (Deployed at Capgemini) <span style="color:#84847e;font-weight:400;font-size:.9em;">(Feb 2022 – Jul 2022 · Pune)</span></h3><p>Staffing, vendor management, onboarding frameworks, data tracking, forecasting.</p></div>
-<div class="card"><h3>Senior Customer Care Executive — Wipro BPO, Pune <span style="color:#84847e;font-weight:400;font-size:.9em;">(Mar 2004 – Mar 2008 · Pune)</span></h3><p>Developed strong foundation in client management, quality assurance, and operational efficiency. Managed UK-based insurance policies, facilitated payments, and ensured compliance with service-level agreements. Led training, quality audits, and process optimization contributing to team efficiency.</p></div>
+<div class="card"><h3>Sr Analyst (PMO) — Buzzworks Business Services (Deployed at Capgemini) <span style="color:#52525b;font-weight:400;font-size:.85em;">(Feb 2022 – Jul 2022 · Pune)</span></h3><p>Staffing, vendor management, onboarding frameworks, data tracking, forecasting.</p><span class="tag">Staffing</span><span class="tag">Vendor Mgmt</span><span class="tag">Forecasting</span></div>
+<div class="card"><h3>Senior Customer Care Executive — Wipro BPO, Pune <span style="color:#52525b;font-weight:400;font-size:.85em;">(Mar 2004 – Mar 2008 · Pune)</span></h3><p>Developed strong foundation in client management, quality assurance, and operational efficiency. Managed UK-based insurance policies, facilitated payments, and ensured compliance with service-level agreements. Led training, quality audits, and process optimization contributing to team efficiency.</p><span class="tag">Client Mgmt</span><span class="tag">Quality Assurance</span><span class="tag">Operations</span><span class="tag">Insurance Policies</span></div>
 </section>
 
 <section id="certifications"><h2>Certifications</h2>
@@ -81,9 +78,8 @@ a[href="Bhagyashri_Portfolio_2026.pdf"] { color: var(--color-ember); text-decora
 <div class="card"><p><strong>Email:</strong> <a href="mailto:bkachare@gmail.com">bkachare@gmail.com</a> · <strong>Phone:</strong> +91 98508 99140</p><p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/bhagyashri-kachare-joshi-ab091831">linkedin.com/in/bhagyashri-kachare-joshi-ab091831</a></p></div>
 </section>
 
-<footer style="margin-top:5rem;padding-top:1.5rem;border-top:1px solid var(--color-stone);font-family:var(--font-berkeleymono);font-size:.7rem;color:var(--color-driftwood);display:flex;justify-content:space-between;gap:1rem;">
-<span>Profile: wife (Bhagyashri Kachare) · Source: DESIGN.md (Cursor parchment)</span>
-<span>Clean · No photo · No shadow</span>
+<footer style="margin-top:4rem;padding-top:1rem;border-top:1px solid var(--cloud);font-family:var(--font-mono);font-size:.7rem;color:var(--fog);display:flex;justify-content:space-between;gap:1rem;">
+<span>Profile: Bhagyashri Kachare — Design: Awesomic (DESIGN_1.md) · No photo · No shadow</span>
 </footer>
 </body>
 </html>
